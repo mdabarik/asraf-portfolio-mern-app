@@ -35,8 +35,10 @@ const DetailsPage = () => {
             <div>
                 <div className="h-[500px] relative max-w-[1280px] mx-auto">
                     <img className="w-full h-full object-cover" src={data[0]?.photo} alt="image" />
-                    <div className="h-[500px] w-[80%] mx-auto bg-[#00000090] absolute top-0 left-0 flex  flex-col items-center justify-center space-y-5">
-                        <h1 className="text-center text-white text-2xl md:text-3xl lg:text-5xl font-bold">{data[0]?.title}</h1>
+                    <div className="h-[500px] mx-auto bg-[#00000090] absolute top-0 left-0 flex  flex-col items-center justify-center space-y-5">
+                        <div className="w-[80%] mx-auto text-center flex items-center justify-center">
+                            <h1 className="text-center text-white text-2xl md:text-3xl lg:text-5xl font-bold">{data[0]?.title}</h1>
+                        </div>
                         {/* <p className="text-sm md:text-lg lg:text-xl text-center text-white">{"Ali Asraf | Data Analyst"}</p> */}
                         {/* <Link to="/rooms" className="btn btn-secondary text-center" >Book Now</Link> */}
                     </div>
